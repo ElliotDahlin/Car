@@ -14,12 +14,12 @@ namespace DatabasProjekt1
     {
         public static MySqlConnection GetConnection()
         {
-           string server = "Library";
-           string databas = "mydb";
-           string dbUser = "root";
-           string dbPass = "Dahlin12345!";
-           string dbPort = "3306";
-           string dbHost = "127.0.0.1";
+           string server = "";
+           string databas = "";
+           string dbUser = "";
+           string dbPass = "";
+           string dbPort = "";
+           string dbHost = "";
            string connString = $"SERVER={server};DATABASE={databas};UID={dbUser};PASSWORD={dbPass};PORT={dbPort};HOST={dbHost};Allow User Variables=true";
 
             MySqlConnection conn = new MySqlConnection(connString);
